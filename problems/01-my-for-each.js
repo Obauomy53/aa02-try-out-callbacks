@@ -29,7 +29,6 @@ myForEach(['a', 'b', 'c'], function (el, i) {
 
 
 function myForEach(array, cb) {
-    let newArray = []
     for (let i = 0; i < array.length; i++){
         // console.log(array)
         let val = array[i]

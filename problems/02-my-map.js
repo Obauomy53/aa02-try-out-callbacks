@@ -15,9 +15,22 @@ let result2 = myMap(['run', 'Forrest'], function (el) {
 });
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 *******************************************************************************/
+let result1 = myMap([100, 25, 81, 64], Math.sqrt);
+console.log(result1);   // [ 10, 5, 9, 8 ]
 
+let result2 = myMap(['run', 'Forrest'], function (el) {
+    return el.toUpperCase() + '!';
+});
 function myMap(array, cb) {
-    // Your code here 
+    let newArr = []
+    for (let i =0; i < array.length; i++){
+       let num = array[i]
+        newArr.push(Math.sqrt(num))
+        // console.log(newArr)
+    } if else {
+        cb(i)
+    }
+    return newArr
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
